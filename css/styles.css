@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222222;
+  color: white;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  background-color: #333333;
+  border-radius: 3px;
+}
+
+main > h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+main #search-form form {
+  width: 100%;
+  gap: 1rem;
+  display: flex;
+}
+main #search-form input {
+  flex: 1;
+  height: 32px;
+  border-radius: 5px;
+  border: none;
+  padding: 0 10px;
+  font-size: 16px;
+}
+main #search-form button {
+  background: linear-gradient(to right, #000000, rgb(184, 185, 185));
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0rem 0.1rem;
+  height: 32px;
+}
+main #search-form button:hover {
+  background: linear-gradient(to right, #0e25f3, #ad0aee);
+  transform: scale(1.1);
+  transition: transform 0.07s ease 0.1s;
+}
+/* tempo info */
+main #tempo-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main #tempo-info .tempo-dados h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+main #tempo-info .tempo-dados span {
+  font-size: 3rem;
+  font-weight: bold;
+}
